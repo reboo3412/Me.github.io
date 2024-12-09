@@ -1892,7 +1892,7 @@ a.text-dark:focus {
   }
 }
 
-@media (min-width: 370px) {
+@media (min-width: 350px) {
   .page-banner.home-banner h2 {
     font-size: 3.6rem;
     font-weight: 900;
