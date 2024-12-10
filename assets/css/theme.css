@@ -1901,7 +1901,9 @@ a.text-dark:focus {
   .py-5 {
     padding-bottom: 0rem !important;
   }
-
+  .abt-hero {
+    display: none;
+  }
   p {
     text-align: justify;
   }
