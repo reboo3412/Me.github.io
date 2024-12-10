@@ -1917,6 +1917,14 @@ a.text-dark:focus {
     z-index: -1 !important;
   }
 
+  .page-section .abt .custom-element-abt {
+    background-image: url("../img/55.png");
+    width: 30px;
+    height: 30px;
+    top: 21%;
+    left: 33%;
+  }
+
   .page-section .abt .custom-element-abt1 {
     background-image: url(../img/50.png);
     width: 50px;
