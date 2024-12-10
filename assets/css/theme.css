@@ -1883,7 +1883,6 @@ a.text-dark:focus {
 }
 
 @media (min-width: 768px) {
-  
   .page-banner.home-banner {
     height: 540px;
   }
@@ -1898,8 +1897,11 @@ a.text-dark:focus {
     font-weight: 900;
     color: #45425c;
   }
+  .pb-5,
+  .py-5 {
+    padding-bottom: 0rem !important;
+  }
 }
-
 
 .page-hero.overlay-dark::before,
 .page-banner.overlay-dark::before {
