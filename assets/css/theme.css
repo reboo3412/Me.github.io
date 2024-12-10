@@ -1901,7 +1901,7 @@ a.text-dark:focus {
   .py-5 {
     padding-bottom: 0rem !important;
   }
-  .page-section .abt .img-fluid {
+  .img-fluid {
     display: none !important;
   }
 }
