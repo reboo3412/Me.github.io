@@ -1912,6 +1912,10 @@ a.text-dark:focus {
     text-align: justify;
   }
 
+  .abt-p {
+    width: 85% !important;
+  }
+
   .page-section .container .custom-element-1,
   .page-section .container .custom-element-2,
   .page-section .container .custom-element-3,
