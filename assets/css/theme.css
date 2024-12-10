@@ -1901,6 +1901,9 @@ a.text-dark:focus {
   .py-5 {
     padding-bottom: 0rem !important;
   }
+  .page-section.home-banner .img-fluid {
+    display: none;
+  }
 }
 
 .page-hero.overlay-dark::before,
