@@ -1908,6 +1908,10 @@ a.text-dark:focus {
     padding-bottom: 0rem !important;
   }
 
+  .page-section {
+    padding-top: 1px;
+  }
+
   p {
     text-align: justify;
   }
