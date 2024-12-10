@@ -1904,6 +1904,9 @@ a.text-dark:focus {
   .img-fluid {
     display: none !important;
   }
+  p {
+    text-align: justify;
+  }
 
   .page-section .container .custom-element-1,
   .page-section .container .custom-element-2,
