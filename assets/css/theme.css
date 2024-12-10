@@ -1906,12 +1906,12 @@ a.text-dark:focus {
 
   .pb-3,
   .py-3 {
-    padding-top: 0rem !important;
-    padding-bottom: 0rem !important;
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
   }
   .pb-5,
   .py-5 {
-    padding-bottom: 0rem !important;
+    padding-bottom: 0.5rem !important;
   }
 
   .page-section {
