@@ -1903,10 +1903,6 @@ a.text-dark:focus {
     font-weight: 900;
     color: #45425c;
   }
-  .pb-5,
-  .py-5 {
-    padding-bottom: 0rem !important;
-  }
 
   p {
     text-align: justify;
