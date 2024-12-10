@@ -1624,7 +1624,7 @@ a.text-dark:focus {
     background-image: url("../img/50.png");
     width: 50px;
     height: 50px;
-    top: 69%;
+    top: 60%;
     right: 30%;
   }
 }
@@ -1905,6 +1905,11 @@ a.text-dark:focus {
     display: none !important;
   }
 
+  .page-section .container .custom-element-1,
+  .page-section .container .custom-element-2,
+  .page-section .container .custom-element-3,
+  .page-section .container .custom-element-4,
+  .page-section .container .custom-element-abt,
   .page-section .container .custom-element-abt1 {
     background-repeat: no-repeat;
     background-size: contain;
@@ -1916,7 +1921,7 @@ a.text-dark:focus {
     background-image: url(../img/50.png);
     width: 50px;
     height: 50px;
-    top: 69%;
+    top: 80%;
     right: 30%;
   }
 }
