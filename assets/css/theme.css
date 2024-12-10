@@ -1903,6 +1903,12 @@ a.text-dark:focus {
     font-weight: 900;
     color: #45425c;
   }
+
+  .pb-3,
+  .py-3 {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+  }
   .pb-5,
   .py-5 {
     padding-bottom: 0rem !important;
