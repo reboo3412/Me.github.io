@@ -1337,7 +1337,7 @@ a.text-dark:focus {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  animation: move-bg 10s ease-in-out infinite;
+  animation: move-bg 10s ease-in-out infinite alternate !important;
 }
 
 .bg-image > * {
@@ -1897,6 +1897,33 @@ a.text-dark:focus {
   }
 }
 
+@media (max-width: 500px) {
+  .bg-image {
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: move-bg 10s ease-in-out infinite alternate !important;
+  }
+
+  .bg-image > * {
+    position: relative;
+    z-index: 10;
+  }
+
+  @keyframes move-bg {
+    0% {
+      background-position: center top;
+    }
+    50% {
+      background-position: center bottom;
+    }
+    100% {
+      background-position: center top;
+    }
+  }
+}
+
 @media (min-width: 350px) {
   .page-banner.home-banner h2 {
     font-size: 3.6rem;
@@ -1942,26 +1969,6 @@ a.text-dark:focus {
     height: 50px;
     top: 69%;
     right: 30%;
-  }
-
-  @keyframes move-bg {
-    0% {
-      background-position: center top;
-    }
-    50% {
-      background-position: center bottom;
-    }
-    100% {
-      background-position: center top;
-    }
-  }
-
-  .bg-image {
-    position: relative;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    animation: move-bg 10s ease-in-out infinite;
   }
 }
 
