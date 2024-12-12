@@ -1943,6 +1943,26 @@ a.text-dark:focus {
     top: 69%;
     right: 30%;
   }
+
+  @keyframes move-bg {
+    0% {
+      background-position: center top;
+    }
+    50% {
+      background-position: center bottom;
+    }
+    100% {
+      background-position: center top;
+    }
+  }
+
+  .bg-image {
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: move-bg 10s ease-in-out infinite;
+  }
 }
 
 .page-hero.overlay-dark::before,
