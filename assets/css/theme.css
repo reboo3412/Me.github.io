@@ -1337,7 +1337,7 @@ a.text-dark:focus {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  animation: move-bg 10s ease-in-out infinite alternate !important;
+  animation: move-bg 5s ease-in-out infinite alternate !important;
 }
 
 .bg-image > * {
@@ -1639,6 +1639,15 @@ a.text-dark:focus {
   z-index: 10;
 }
 
+.page-banner .custom-element {
+  width: 100%;
+  height: 90vh;
+  background-image: url(/assets/img/bg_hero.png);
+  position: absolute;
+  top: -6%;
+  z-index: -1;
+}
+
 .page-banner.home-banner {
   height: auto;
 }
@@ -1903,7 +1912,7 @@ a.text-dark:focus {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    animation: move-bg 10s ease-in-out infinite alternate !important;
+    animation: move-bg 5s ease-in-out infinite alternate !important;
   }
 
   .bg-image > * {
@@ -2292,11 +2301,12 @@ a.text-dark:focus {
 }
 
 .card-blog {
+  padding: 0.5rem;
   display: block;
   margin: 0 auto;
   max-width: 280px;
   border-radius: 4px;
-  box-shadow: 0 2px 6px rgba(100, 95, 136, 0.16);
+  background-color: #fff;
   overflow: hidden;
 }
 
@@ -2334,6 +2344,7 @@ a.text-dark:focus {
 
 .card-blog .post-date {
   font-size: 13px;
+  color: #24126d;
 }
 
 .form-search-blog .custom-select {
