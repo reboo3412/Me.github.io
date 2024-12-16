@@ -2350,6 +2350,24 @@ a.text-dark:focus {
   max-width: 1100px;
 }
 
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #f1f1f1;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .card-blog .body {
   padding: 20px;
 }
