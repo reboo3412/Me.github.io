@@ -2326,13 +2326,14 @@ a.text-dark:focus {
   height: auto;
   object-fit: cover;
   cursor: zoom-in;
+  border-radius: 10px;
 }
 
 /* Modal Styles */
 .modal {
   display: none; /* Hidden by default */
   position: fixed;
-  z-index: 1; /* Sit on top */
+  z-index: 999; /* Sit on top */
   left: 0;
   top: 0;
   width: 100%;
