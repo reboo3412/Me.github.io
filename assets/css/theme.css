@@ -2329,6 +2329,12 @@ a.text-dark:focus {
   border-radius: 10px;
 }
 
+/* Prevent scrolling of the entire page */
+body.no-scroll {
+  overflow: hidden; /* Disables scrolling */
+  height: 100%; /* Ensures the page doesn't move */
+}
+
 /* Modal Styles */
 .modal {
   display: none; /* Hidden by default */
@@ -2341,6 +2347,7 @@ a.text-dark:focus {
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.8);
   padding-top: 120px;
+  overflow: hidden;
 }
 
 .modal-content {
