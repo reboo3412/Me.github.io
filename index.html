@@ -439,7 +439,7 @@
                 data-bs-ride="carousel"
               >
                 <div class="carousel-inner" id="carouselImages">
-                  <!-- Carousel items will be dynamically inserted here -->
+                  <!-- Carousel items are pre-mapped and inserted here -->
                 </div>
                 <button
                   class="carousel-control-prev"
@@ -469,36 +469,74 @@
               <div id="caption"></div>
             </div>
 
-            <script>
-              // Related images mapping (for demonstration purposes)
-              var relatedImages = {
-                0: [
-                  "./assets/img/PAWatch/DashboardU1.png",
-                  "./assets/img/PAWatch/ContributeU.png",
-                  "./assets/img/PAWatch/SurrDogU.png",
-                  "./assets/img/PAWatch/QuestionsU.png",
-                  "./assets/img/PAWatch/SelectionU.png",
-                  "./assets/img/PAWatch/DogDetailsU.png",
-                  "./assets/img/PAWatch/ApplicationDogU.png",
-                  "./assets/img/PAWatch/AfterAppU.png",
-                  "./assets/img/PAWatch/SetDateU.png",
-                  "./assets/img/PAWatch/FinishU.png",
-                  "./assets/img/PAWatch/HistoryU.png",
-                ],
-                1: ["./assets/img/related4.jpg", "./assets/img/related5.jpg"],
-                2: [
-                  "./assets/img/related6.jpg",
-                  "./assets/img/related7.jpg",
-                  "./assets/img/related8.jpg",
-                ],
-              };
+            <!-- Related Images Mapping in HTML -->
+            <div id="relatedImages" style="display: none">
+              <div data-index="0">
+                <img
+                  src="./assets/img/PAWatch/DashboardU1.png"
+                  alt="Related Image 1"
+                />
+                <img
+                  src="./assets/img/PAWatch/ContributeU.png"
+                  alt="Related Image 2"
+                />
+                <img
+                  src="./assets/img/PAWatch/SurrDogU.png"
+                  alt="Related Image 3"
+                />
+                <img
+                  src="./assets/img/PAWatch/QuestionsU.png"
+                  alt="Related Image 4"
+                />
+                <img
+                  src="./assets/img/PAWatch/SelectionU.png"
+                  alt="Related Image 5"
+                />
+                <img
+                  src="./assets/img/PAWatch/DogDetailsU.png"
+                  alt="Related Image 6"
+                />
+                <img
+                  src="./assets/img/PAWatch/ApplicationDogU.png"
+                  alt="Related Image 7"
+                />
+                <img
+                  src="./assets/img/PAWatch/AfterAppU.png"
+                  alt="Related Image 8"
+                />
+                <img
+                  src="./assets/img/PAWatch/SetDateU.png"
+                  alt="Related Image 9"
+                />
+                <img
+                  src="./assets/img/PAWatch/SetDateU.png"
+                  alt="Related Image 10"
+                />
+                <img
+                  src="./assets/img/PAWatch/HistoryU.png"
+                  alt="Related Image 11"
+                />
+              </div>
+              <div data-index="1">
+                <img src="./assets/img/related4.jpg" alt="Related Image 4" />
+                <img src="./assets/img/related5.jpg" alt="Related Image 5" />
+              </div>
+              <div data-index="2">
+                <img src="./assets/img/related6.jpg" alt="Related Image 6" />
+                <img src="./assets/img/related7.jpg" alt="Related Image 7" />
+                <img src="./assets/img/related8.jpg" alt="Related Image 8" />
+              </div>
+            </div>
 
+            <script>
               // Get the modal
               var modal = document.getElementById("imageModal");
 
               // Get all the images
               var images = document.getElementsByClassName("modal-img");
               var carouselImages = document.getElementById("carouselImages");
+              var relatedImagesContainer =
+                document.getElementById("relatedImages").children;
               var captionText = document.getElementById("caption");
 
               // Add event listeners to images
@@ -515,21 +553,23 @@
                   firstDiv.className = "carousel-item active";
                   var firstImg = document.createElement("img");
                   firstImg.src = images[clickedIndex].src;
-                  firstImg.className = "d-block w-100";
+                  firstImg.className = "d-block w-100 img-fluid";
                   firstDiv.appendChild(firstImg);
                   carouselImages.appendChild(firstDiv);
 
-                  // Add related images
-                  if (relatedImages[clickedIndex]) {
-                    relatedImages[clickedIndex].forEach(function (relatedSrc) {
+                  // Find and add related images from the HTML mapping
+                  var relatedGroup = relatedImagesContainer[clickedIndex];
+                  if (relatedGroup) {
+                    var relatedImgs = relatedGroup.getElementsByTagName("img");
+                    for (var j = 0; j < relatedImgs.length; j++) {
                       var div = document.createElement("div");
                       div.className = "carousel-item";
                       var img = document.createElement("img");
-                      img.src = relatedSrc;
-                      img.className = "d-block w-100";
+                      img.src = relatedImgs[j].src;
+                      img.className = "d-block w-100 img-fluid";
                       div.appendChild(img);
                       carouselImages.appendChild(div);
-                    });
+                    }
                   }
 
                   // Show the modal
