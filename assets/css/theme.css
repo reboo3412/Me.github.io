@@ -2357,6 +2357,11 @@ body.no-scroll {
   max-width: 1000px;
 }
 
+.modal img {
+  max-height: 75vh; /* Reduce size */
+  object-fit: contain; /* Ensure it fits well */
+}
+
 .close {
   position: absolute;
   top: 15px;

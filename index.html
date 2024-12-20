@@ -386,7 +386,7 @@
                 <div class="header">
                   <div class="post-thumb">
                     <img
-                      src="./assets/img/PAWatch1.png"
+                      src="./assets/img/PAWatch/DashboardU.png"
                       alt=""
                       class="modal-img"
                     />
@@ -430,27 +430,110 @@
               </div>
             </div>
 
-            <!-- Modal Structure -->
+            <!-- Modal Structure with Carousel -->
             <div id="imageModal" class="modal">
               <span class="close">&times;</span>
-              <img class="modal-content" id="modalImage" />
+              <div
+                id="carouselExample"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner" id="carouselImages">
+                  <!-- Carousel items will be dynamically inserted here -->
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExample"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExample"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
               <div id="caption"></div>
             </div>
 
             <script>
+              // Related images mapping (for demonstration purposes)
+              var relatedImages = {
+                0: [
+                  "./assets/img/PAWatch/DashboardU1.png",
+                  "./assets/img/PAWatch/ContributeU.png",
+                  "./assets/img/PAWatch/SurrDogU.png",
+                  "./assets/img/PAWatch/QuestionsU.png",
+                  "./assets/img/PAWatch/SelectionU.png",
+                  "./assets/img/PAWatch/DogDetailsU.png",
+                  "./assets/img/PAWatch/ApplicationDogU.png",
+                  "./assets/img/PAWatch/AfterAppU.png",
+                  "./assets/img/PAWatch/SetDateU.png",
+                  "./assets/img/PAWatch/FinishU.png",
+                  "./assets/img/PAWatch/HistoryU.png",
+                ],
+                1: ["./assets/img/related4.jpg", "./assets/img/related5.jpg"],
+                2: [
+                  "./assets/img/related6.jpg",
+                  "./assets/img/related7.jpg",
+                  "./assets/img/related8.jpg",
+                ],
+              };
+
               // Get the modal
               var modal = document.getElementById("imageModal");
 
-              // Get all the images and insert them into the modal
+              // Get all the images
               var images = document.getElementsByClassName("modal-img");
-              var modalImg = document.getElementById("modalImage");
+              var carouselImages = document.getElementById("carouselImages");
               var captionText = document.getElementById("caption");
 
               // Add event listeners to images
               for (var i = 0; i < images.length; i++) {
+                images[i].setAttribute("data-index", i); // Assign a unique index to each image
                 images[i].onclick = function () {
+                  var clickedIndex = this.getAttribute("data-index");
+
+                  // Populate the carousel with the clicked image and its related images
+                  carouselImages.innerHTML = "";
+
+                  // Add the clicked image as the first active carousel item
+                  var firstDiv = document.createElement("div");
+                  firstDiv.className = "carousel-item active";
+                  var firstImg = document.createElement("img");
+                  firstImg.src = images[clickedIndex].src;
+                  firstImg.className = "d-block w-100";
+                  firstDiv.appendChild(firstImg);
+                  carouselImages.appendChild(firstDiv);
+
+                  // Add related images
+                  if (relatedImages[clickedIndex]) {
+                    relatedImages[clickedIndex].forEach(function (relatedSrc) {
+                      var div = document.createElement("div");
+                      div.className = "carousel-item";
+                      var img = document.createElement("img");
+                      img.src = relatedSrc;
+                      img.className = "d-block w-100";
+                      div.appendChild(img);
+                      carouselImages.appendChild(div);
+                    });
+                  }
+
+                  // Show the modal
                   modal.style.display = "block";
-                  modalImg.src = this.src;
                   captionText.innerHTML = this.alt;
 
                   // Disable scrolling on the body
@@ -479,6 +562,13 @@
                 }
               };
             </script>
+
+            <!-- Include Bootstrap CSS and JS -->
+            <link
+              href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+              rel="stylesheet"
+            />
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
             <div class="col-12 text-center wow fadeInUp">
               <a href="blog.html" class="btn btn-primary">View More</a>
