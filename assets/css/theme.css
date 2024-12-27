@@ -2355,6 +2355,7 @@ body.no-scroll {
   display: block;
   width: 90%;
   max-width: 500px;
+  z-index: 999;
 }
 
 .modal img {
