@@ -1639,8 +1639,8 @@ a.text-dark:focus {
   z-index: 10;
 }
 
-.page-background {
-  background-image: url(/assets/img/Abundant/AmcsWeb1.png);
+.page-banner {
+  background-image: url(/assets/img/bg_hero.png);
 }
 
 .page-banner .custom-element {
