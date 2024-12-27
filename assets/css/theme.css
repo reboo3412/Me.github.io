@@ -1639,7 +1639,7 @@ a.text-dark:focus {
   z-index: 10;
 }
 
-.page-banner {
+.page-background {
   background-image: url(/assets/img/bg_hero.png);
 }
 
