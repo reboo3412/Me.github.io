@@ -2339,7 +2339,7 @@ body.no-scroll {
 .modal {
   display: none; /* Hidden by default */
   position: fixed;
-  z-index: 999; /* Sit on top */
+  z-index: 9999; /* Sit on top */
   left: 0;
   top: 0;
   width: 100%;
