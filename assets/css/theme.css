@@ -2358,7 +2358,7 @@ body.no-scroll {
   margin: auto;
   top: 70%;
   transform: translateY(-50%);
-  max-width: 50%;
+  max-width: 80%;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
