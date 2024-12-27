@@ -1640,7 +1640,7 @@ a.text-dark:focus {
 }
 
 .page-background {
-  background-image: url(/assets/img/bg_hero.png);
+  background-image: url(../img/bg_hero.png);
 }
 
 .page-banner .custom-element {
