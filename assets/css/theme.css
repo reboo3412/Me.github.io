@@ -2386,8 +2386,9 @@ body.no-scroll {
 }
 
 .card-blog .post-title a {
-  color: #645f88;
+  color: #393363;
   transition: color 0.2s ease;
+  font-size: 14px;
 }
 
 .card-blog .post-title a:hover,
