@@ -2340,7 +2340,7 @@ body.no-scroll {
 .modal {
   display: none;
   position: fixed;
-  z-index: 999;
+  z-index: 9999;
   left: 0;
   top: 0;
   width: 100%;
@@ -2395,7 +2395,7 @@ body.no-scroll {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
   cursor: pointer;
