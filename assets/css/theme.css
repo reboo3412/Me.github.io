@@ -1640,7 +1640,7 @@ a.text-dark:focus {
 }
 
 .page-background {
-  background-image: url(/assets/img/bg_hero.png);
+  background-image: url(/assets/img/Abundant/AmcsWeb1.png);
 }
 
 .page-banner .custom-element {
@@ -2308,7 +2308,7 @@ a.text-dark:focus {
   padding: 0.5rem;
   display: block;
   margin: 0 auto;
-  max-width: 380px;
+  max-width: 500px;
   border-radius: 4px;
   background-color: #fff;
   overflow: hidden;
