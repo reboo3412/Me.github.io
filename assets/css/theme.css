@@ -2477,6 +2477,7 @@ body.no-scroll {
   background-color: #fff;
   color: #898798;
   transition: all 0.2s linear;
+  text-decoration: none;
 }
 
 .social-media-button a:hover {
