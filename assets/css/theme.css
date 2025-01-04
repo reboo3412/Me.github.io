@@ -1332,7 +1332,7 @@ a.text-dark:focus {
   }
 }
 
-.bg-image {
+.bg-image-proj {
   position: relative;
   background-position: center center;
   background-size: cover;
@@ -1340,20 +1340,20 @@ a.text-dark:focus {
   animation: move-bg 5s ease-in-out infinite alternate !important;
 }
 
-.bg-image > * {
+.bg-image-proj > * {
   position: relative;
   z-index: 10;
 }
 
-.bg-image-parallax {
+.bg-image-proj-parallax {
   background-attachment: fixed;
 }
 
-.bg-image-overlay-dark {
+.bg-image-proj-overlay-dark {
   position: relative;
 }
 
-.bg-image-overlay-dark::before {
+.bg-image-proj-overlay-dark::before {
   content: "";
   position: absolute;
   top: 0;
