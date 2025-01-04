@@ -1337,7 +1337,7 @@ a.text-dark:focus {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  animation: move-bg 5s ease-in-out infinite alternate !important;
+  animation: move-bg 1s ease-in-out infinite alternate !important;
 }
 
 .bg-image-proj > * {
