@@ -2440,13 +2440,13 @@ body.no-scroll {
 }
 
 .footer-menu {
-  position: relative;
-  padding-left: 0;
-  list-style: none;
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
 }
 
 .footer-menu li {
-  margin-bottom: 12px;
+  margin: 0 10px; /* Add space between list items */
 }
 
 .footer-link {
@@ -2456,6 +2456,7 @@ body.no-scroll {
 
 .footer-menu a,
 .footer-link {
+  text-decoration: none;
   color: #898798;
 }
 
