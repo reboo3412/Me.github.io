@@ -2456,6 +2456,7 @@ body.no-scroll {
 
 .footer-menu a,
 .footer-link {
+  display: inline-block;
   text-decoration: none;
   color: #898798;
 }
