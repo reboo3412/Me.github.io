@@ -2443,6 +2443,8 @@ body.no-scroll {
   list-style: none; /* Remove bullet points */
   padding: 0; /* Remove default padding */
   margin: 0; /* Remove default margin */
+  display: flex; /* Display items in a row */
+  justify-content: center; /* Center items horizontally */
 }
 
 .footer-menu li {
