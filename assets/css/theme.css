@@ -1649,7 +1649,7 @@ a.text-dark:focus {
   background-image: url(../img/bg_hero.png);
   position: absolute;
   top: -6%;
-  z-index: -1;
+  z-index: -999;
 }
 
 .page-banner.home-banner {
