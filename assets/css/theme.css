@@ -1645,7 +1645,11 @@ a.text-dark:focus {
 
 .page-background-proj {
   background-image: url(../img/Background/2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; /* Optional: Centers the image */
 }
+
 .page-banner .custom-element {
   width: 100%;
   height: 90vh;
