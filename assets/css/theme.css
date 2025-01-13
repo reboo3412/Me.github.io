@@ -1073,7 +1073,7 @@ a.text-dark:focus {
 }
 
 .breadcrumb .breadcrumb-item.active {
-  color: #8e8aad;
+  color: #ffffff;
 }
 
 .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
