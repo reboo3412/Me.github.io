@@ -1643,15 +1643,22 @@ a.text-dark:focus {
   background-image: url(../img/bg_hero.png);
 }
 
+.page-background-cert {
+  background-image: url(../img/Background/4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; /* Optional: Centers the image */
+}
+
 .page-background-proj {
-  background-image: url(../img/Background/2.png);
+  background-image: url(../img/Background/5.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; /* Optional: Centers the image */
 }
 
 .page-background-abt {
-  background-image: url(../img/Background/3.png);
+  background-image: url(../img/Background/6.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; /* Optional: Centers the image */
